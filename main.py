@@ -32,3 +32,6 @@ def CustomChatGPT(user_input):
 
 # demo object is created from the gradio.Interface class with parameters to generate a user interface
 demo = gradio.Interface(fn=CustomChatGPT, inputs = "text", outputs = "text", title = "Software Engineering Pro")
+
+# demo object is calling a member function to display a user interface
+demo.launch(share=True)
